@@ -1,5 +1,3 @@
-Linear Regression
-
 # Linear regression
 1. Linear Regression is a machine learning algorithm based on supervised learning.
 2. Regrssion model predict a dependent variable value (y) based on a given independent variable (x).
