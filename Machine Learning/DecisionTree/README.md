@@ -9,7 +9,8 @@
 
 #### Entropy
 The ID3 (Iterative Dichotomiser) Decision Tree algorithm uses entropy to calculate information gain. So, by calculating decrease in entropy measure of each attribute we can calculate their information gain.
-<iframe src="https://www.kaggle.com/embed/prashant111/decision-tree-classifier-tutorial?cellIds=11&kernelSessionId=30115184" height="300" style="margin: 0 auto; width: 100%; max-width: 950px;" frameborder="0" scrolling="auto" title="Decision-Tree Classifier Tutorial "></iframe>
+![entropy-formula](https://user-images.githubusercontent.com/122164879/215848799-61179717-6900-4126-afd7-37bf3d6e43c5.png)
+
 
 ```python
 
@@ -19,7 +20,8 @@ zero means pure node
 one means bad nodeHere, c is the number of classes and pi is the probability associated with the ith class.
 #### Gini index
 Another attribute selection measure that CART (Categorical and Regression Trees) uses is the Gini index. It uses the Gini method to create split points.
-<iframe src="https://www.kaggle.com/embed/prashant111/decision-tree-classifier-tutorial?cellIds=14&kernelSessionId=30115184" height="300" style="margin: 0 auto; width: 100%; max-width: 950px;" frameborder="0" scrolling="auto" title="Decision-Tree Classifier Tutorial "></iframe>
+![images](https://user-images.githubusercontent.com/122164879/215848903-b4134866-a3c6-4406-8460-4f0a2751dd8d.png)
+
 ```python
 
 ```
