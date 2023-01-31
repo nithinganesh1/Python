@@ -1,1 +1,191 @@
 Linear Regression
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "id": "5d7774f6",
+   "metadata": {},
+   "source": [
+    "# Linear regression"
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "f3f019a7",
+   "metadata": {},
+   "source": [
+    "1. Linear Regression is a machine learning algorithm based on supervised learning.\n",
+    "2. Regrssion model predict a dependent variable value (y) based on a given independent variable (x).\n",
+    "3. It is used for predicting the continuous dependent variable with the help of independent variables.\n",
+    "4. goal: find the best fit line that can accurately predict the output for the continuous dependent variable\n",
+    "\n",
+    "1. Simple Linear Regression\n",
+    "        there is only single indipendent variable\n",
+    "    \n",
+    "2. Multiple Linear Regression\n",
+    "        there are two or more inipendent variable\n"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "6c435312",
+   "metadata": {},
+   "source": [
+    "### Assumptions of feature selection"
+   ]
+  },
+  {
+   "cell_type": "raw",
+   "id": "b98e129e",
+   "metadata": {},
+   "source": [
+    "1. The relationship between the independent and dependent variable should be linear.\n",
+    "\n",
+    "2. The independent variables should not be highly correlated with each other.\n",
+    "\n",
+    "3. The model should not omit any important independent variables.\n",
+    "\n",
+    "4. The observations used to estimate the relationship should be independent of each other.\n",
+    "\n",
+    "5. The error should be normally distributed.\n",
+    "\n",
+    "6. The variance of error should be constant v(e)=K\n",
+    "\n",
+    "7. E(e)=0"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "4cdfeee6",
+   "metadata": {},
+   "source": [
+    "# Linear Regression Code Sample"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "7532514c",
+   "metadata": {},
+   "source": [
+    "### Step 1 | Data Pre-Processing"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "31c984e5",
+   "metadata": {},
+   "source": [
+    "#### train_test_split"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "56ac0dd1",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "from sklearn.cross_validation import train_test_split\n",
+    "X_train, X_test, y_train, y_test = train_test_split(X, y, test_size = 0.25, random_state = 0)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "fc4cb799",
+   "metadata": {},
+   "source": [
+    "### Step 2 | Linear Regression Model"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "f8377293",
+   "metadata": {},
+   "source": [
+    "##### Fitting Linear Regression to the Training set"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "fc6bbc87",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "from sklearn.linear_model import LinearRegression\n",
+    "obj=LinearRegression()\n",
+    "\n",
+    "#train the model\n",
+    "obj.fit(X_train,y_train)"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "8e04fdfd",
+   "metadata": {},
+   "source": [
+    "### Step 3 | Predection"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "8b719fbe",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "y_pred=pd.DataFrame(obj.predict(X_test))"
+   ]
+  },
+  {
+   "cell_type": "markdown",
+   "id": "3505efc0",
+   "metadata": {},
+   "source": [
+    "### Step 4 | Evaluating The Predection"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "f3166b1f",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "from sklearn.metrics import r2_score\n",
+    "r2_score(y_test, y_pred)"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "id": "eb3197c5",
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "obj.score(X_test,y_test)"
+   ]
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3 (ipykernel)",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.9.13"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 5
+}
