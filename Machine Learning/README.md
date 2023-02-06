@@ -1,7 +1,4 @@
-
-
-
-#Machine Learning Sample code
+# Machine Learning Sample code
 
 ```python
 import pandas as pd
