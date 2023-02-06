@@ -26,6 +26,15 @@
 6. The variance of error should be constant v(e)=K
 
 7. E(e)=0
+
+### equation
+![Screenshot 2023-02-06 161007](https://user-images.githubusercontent.com/122164879/216951567-84c9f321-a6f4-4604-be05-3e3e44e500b8.png)
+
+### R^2
+![Screenshot 2023-02-06 161119](https://user-images.githubusercontent.com/122164879/216951766-b0bf1e6a-bdea-42a1-83c5-14121e0b5090.png)
+
+
+
 # Linear Regression Code Sample
 
 ### Step 1 | Data Pre-Processing
