@@ -472,6 +472,7 @@ models
 
 
 ```python
+from sklearn import model_selection
 names=[]
 results=[]
 for name, model in models:
@@ -489,7 +490,7 @@ for name, model in models:
     NB: 0.9416666666666667 , 0.06508541396588878
     SVM: 0.9666666666666666 , 0.04082482904638632
     
-1.It is best to use LDA here, i.e., acc = 78, and standing diveation is low as well
+1.It is best to use LDA here, i.e., acc = 97.5, and standing diveation is low as well
 2.we can Visualise the models
 
 ```python
@@ -663,12 +664,11 @@ plt.show()
     
 ![output_33_0](https://user-images.githubusercontent.com/122164879/216907478-a54dce6f-bfe2-4819-adb6-652ab7317a95.png)
 
-    
 
-1. here LDA has maximum accuracy
-2. and there is no minumum value only maximum value
-3. LDA have 2 outlayers is that outlayers remove then it will give 100%
-4. LDA values are distributed around median
+1. LDA values are distributed around median
+2. There is no outlayers in this data
+
+
 ### Prediction
 ###### since Accuracy will not always be the metrics to select best model
 LDA
