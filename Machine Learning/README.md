@@ -279,16 +279,8 @@ plt.show()
 ```
 
 
-![output_13_0](https://user-images.githubusercontent.com/122164879/216907442-9df63858-5388-496f-a9b7-d0c70592e65f.png)
-![output_14_0](https://user-images.githubusercontent.com/122164879/216907454-3f32c097-985c-468a-8df4-e02c79367890.png)
-![output_15_1](https://user-images.githubusercontent.com/122164879/216907460-926e6a18-f225-40fa-b6fb-8512140b7ee1.png)
-![output_16_0](https://user-images.githubusercontent.com/122164879/216907465-6e66e44e-ec68-4393-a17c-58a8b5b258a4.png)
-![output_17_0](https://user-images.githubusercontent.com/122164879/216907467-667103b3-f936-4d81-bf68-ef60e89e1f68.png)
-![output_32_0](https://user-images.githubusercontent.com/122164879/216907474-35f953f0-d487-4884-aace-bef79222dc9c.png)
-![output_33_0](https://user-images.githubusercontent.com/122164879/216907478-a54dce6f-bfe2-4819-adb6-652ab7317a95.png)
-![output_45_0](https://user-images.githubusercontent.com/122164879/216907487-06631e62-a4e9-4142-b428-34d35133a413.png)
-    
 
+![output_13_0](https://user-images.githubusercontent.com/122164879/216907442-9df63858-5388-496f-a9b7-d0c70592e65f.png)
     
 
 
@@ -301,7 +293,7 @@ plt.show()
 
 
 
-![png](output_14_0.png)
+![output_14_0](https://user-images.githubusercontent.com/122164879/216907454-3f32c097-985c-468a-8df4-e02c79367890.png)
     
 
 
@@ -319,7 +311,7 @@ sns.heatmap(data.corr(),annot=True,cmap=('Greens'))
 
 
     
-![png](output_15_1.png)
+![output_15_1](https://user-images.githubusercontent.com/122164879/216907460-926e6a18-f225-40fa-b6fb-8512140b7ee1.png)
     
 
 
@@ -331,7 +323,7 @@ plt.show()
 
 
     
-![png](output_16_0.png)
+![output_16_0](https://user-images.githubusercontent.com/122164879/216907465-6e66e44e-ec68-4393-a17c-58a8b5b258a4.png)
     
 
 
@@ -343,7 +335,7 @@ plt.show()
 
 
     
-![png](output_17_0.png)
+![output_17_0](https://user-images.githubusercontent.com/122164879/216907467-667103b3-f936-4d81-bf68-ef60e89e1f68.png)
     
 
 
@@ -653,7 +645,7 @@ plt.show()
 
 
     
-![png](output_32_0.png)
+![output_32_0](https://user-images.githubusercontent.com/122164879/216907474-35f953f0-d487-4884-aace-bef79222dc9c.png)
     
 
 
@@ -669,7 +661,8 @@ plt.show()
 
 
     
-![png](output_33_0.png)
+![output_33_0](https://user-images.githubusercontent.com/122164879/216907478-a54dce6f-bfe2-4819-adb6-652ab7317a95.png)
+
     
 
 1. here LDA has maximum accuracy
@@ -799,7 +792,7 @@ plt.show()
 
 
     
-![png](output_45_0.png)
+![output_45_0](https://user-images.githubusercontent.com/122164879/216907487-06631e62-a4e9-4142-b428-34d35133a413.png)
     
 
 
