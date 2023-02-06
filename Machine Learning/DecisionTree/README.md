@@ -13,9 +13,7 @@ The ID3 (Iterative Dichotomiser) Decision Tree algorithm uses entropy to calcula
 ![entropy-formula](https://user-images.githubusercontent.com/122164879/215848799-61179717-6900-4126-afd7-37bf3d6e43c5.png)
 
 
-```python
 
-```
 value between 0 to 1
 zero means pure node
 one means bad nodeHere, c is the number of classes and pi is the probability associated with the ith class.
@@ -281,6 +279,3 @@ print(classification_report(y,y_pred))
     
 
 
-```python
-
-```
