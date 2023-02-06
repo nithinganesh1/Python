@@ -22,15 +22,10 @@ Another attribute selection measure that CART (Categorical and Regression Trees)
 
 ![images](https://user-images.githubusercontent.com/122164879/215848903-b4134866-a3c6-4406-8460-4f0a2751dd8d.png)
 
-```python
 
-```
 1. Calculate Gini for sub-nodes, using formula sum of the square of probability for success and failure (p^2+q^2).
 2. Calculate Gini for split using weighted Gini score of each node of that split.
 
-```python
-
-```
 
 
 ```python
