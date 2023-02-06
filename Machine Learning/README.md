@@ -1,3 +1,4 @@
+#Machine Learning Sample code
 
 ```python
 import pandas as pd
@@ -279,8 +280,9 @@ plt.show()
 ```
 
 
+    
+![output_13_0](https://user-images.githubusercontent.com/122164879/216912739-b3bff7fe-e2de-48cc-bbdf-dd79a4cd7f98.png)
 
-![output_13_0](https://user-images.githubusercontent.com/122164879/216907442-9df63858-5388-496f-a9b7-d0c70592e65f.png)
     
 
 
@@ -291,10 +293,10 @@ plt.show()
 ```
 
 
-
-
-![output_14_0](https://user-images.githubusercontent.com/122164879/216907454-3f32c097-985c-468a-8df4-e02c79367890.png)
     
+
+![output_14_0](https://user-images.githubusercontent.com/122164879/216912790-f1214d0a-3525-4249-8f8b-3f27ca18a54a.png)
+
 
 
 
@@ -311,7 +313,8 @@ sns.heatmap(data.corr(),annot=True,cmap=('Greens'))
 
 
     
-![output_15_1](https://user-images.githubusercontent.com/122164879/216907460-926e6a18-f225-40fa-b6fb-8512140b7ee1.png)
+![output_15_1](https://user-images.githubusercontent.com/122164879/216912856-93c3f0e4-510b-4a77-bcde-d2204ad0b733.png)
+
     
 
 
@@ -323,7 +326,8 @@ plt.show()
 
 
     
-![output_16_0](https://user-images.githubusercontent.com/122164879/216907465-6e66e44e-ec68-4393-a17c-58a8b5b258a4.png)
+![output_16_0](https://user-images.githubusercontent.com/122164879/216912912-0bb0e334-c1e2-4126-8df3-b96b3d0cdac6.png)
+
     
 
 
@@ -335,7 +339,8 @@ plt.show()
 
 
     
-![output_17_0](https://user-images.githubusercontent.com/122164879/216907467-667103b3-f936-4d81-bf68-ef60e89e1f68.png)
+![output_17_0](https://user-images.githubusercontent.com/122164879/216912942-d1ba1975-3a4d-44c7-b1cc-2813f8da73ee.png)
+
     
 
 
@@ -379,25 +384,25 @@ display(x.sample(3),y.sample(3))
   </thead>
   <tbody>
     <tr>
-      <th>76</th>
-      <td>6.8</td>
-      <td>2.8</td>
-      <td>4.8</td>
-      <td>1.4</td>
+      <th>83</th>
+      <td>6.0</td>
+      <td>2.7</td>
+      <td>5.1</td>
+      <td>1.6</td>
     </tr>
     <tr>
-      <th>143</th>
-      <td>6.8</td>
-      <td>3.2</td>
-      <td>5.9</td>
-      <td>2.3</td>
+      <th>80</th>
+      <td>5.5</td>
+      <td>2.4</td>
+      <td>3.8</td>
+      <td>1.1</td>
     </tr>
     <tr>
-      <th>86</th>
+      <th>65</th>
       <td>6.7</td>
       <td>3.1</td>
-      <td>4.7</td>
-      <td>1.5</td>
+      <td>4.4</td>
+      <td>1.4</td>
     </tr>
   </tbody>
 </table>
@@ -405,9 +410,9 @@ display(x.sample(3),y.sample(3))
 
 
 
-    113    Iris-virginica
-    122    Iris-virginica
-    44        Iris-setosa
+    48        Iris-setosa
+    68    Iris-versicolor
+    58    Iris-versicolor
     Name: species, dtype: object
 
 
@@ -425,7 +430,7 @@ x_train.shape,x_test.shape,y_train.shape,y_test.shape
 
 
 
-    ((120, 4), (30, 4), (120,), (30,))
+    ((117, 4), (30, 4), (117,), (30,))
 
 
 
@@ -483,12 +488,12 @@ for name, model in models:
     print(f"{name}: {cv_results.mean()} , {cv_results.std()}")
 ```
 
-    lr: 0.9416666666666667 , 0.06508541396588878
-    CART: 0.95 , 0.055277079839256664
-    KNN: 0.9499999999999998 , 0.055277079839256664
-    LDA: 0.975 , 0.03818813079129868
-    NB: 0.9416666666666667 , 0.06508541396588878
-    SVM: 0.9666666666666666 , 0.04082482904638632
+    lr: 0.9393939393939392 , 0.06801325965898011
+    CART: 0.9492424242424242 , 0.0415010482569768
+    KNN: 0.9484848484848485 , 0.05856408512147784
+    LDA: 0.9825757575757574 , 0.03488963315051351
+    NB: 0.9484848484848485 , 0.04215281134316231
+    SVM: 0.9568181818181818 , 0.07009520614636609
     
 1.It is best to use LDA here, i.e., acc = 97.5, and standing diveation is low as well
 2.we can Visualise the models
@@ -539,17 +544,17 @@ results
   <tbody>
     <tr>
       <th>0</th>
-      <td>0.916667</td>
-      <td>0.916667</td>
-      <td>0.916667</td>
       <td>1.000000</td>
-      <td>0.833333</td>
-      <td>0.916667</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>1.000000</td>
-      <td>1.000000</td>
+      <td>0.833333</td>
+      <td>0.916667</td>
       <td>1.000000</td>
       <td>1.000000</td>
       <td>0.916667</td>
@@ -557,74 +562,74 @@ results
     </tr>
     <tr>
       <th>2</th>
+      <td>1.000000</td>
+      <td>0.916667</td>
       <td>0.916667</td>
       <td>1.000000</td>
-      <td>1.000000</td>
-      <td>1.000000</td>
-      <td>1.000000</td>
+      <td>0.916667</td>
       <td>1.000000</td>
     </tr>
     <tr>
       <th>3</th>
       <td>1.000000</td>
       <td>1.000000</td>
-      <td>1.000000</td>
+      <td>0.916667</td>
       <td>1.000000</td>
       <td>1.000000</td>
       <td>1.000000</td>
     </tr>
     <tr>
       <th>4</th>
+      <td>0.916667</td>
+      <td>0.916667</td>
+      <td>0.916667</td>
+      <td>0.916667</td>
       <td>1.000000</td>
-      <td>0.916667</td>
-      <td>0.833333</td>
-      <td>0.916667</td>
-      <td>0.833333</td>
       <td>0.916667</td>
     </tr>
     <tr>
       <th>5</th>
+      <td>1.000000</td>
+      <td>0.916667</td>
+      <td>0.916667</td>
+      <td>1.000000</td>
+      <td>0.916667</td>
       <td>0.833333</td>
-      <td>0.916667</td>
-      <td>0.916667</td>
-      <td>0.916667</td>
-      <td>0.916667</td>
-      <td>0.916667</td>
     </tr>
     <tr>
       <th>6</th>
+      <td>0.916667</td>
+      <td>0.916667</td>
       <td>1.000000</td>
       <td>1.000000</td>
-      <td>1.000000</td>
-      <td>1.000000</td>
-      <td>1.000000</td>
+      <td>0.916667</td>
       <td>1.000000</td>
     </tr>
     <tr>
       <th>7</th>
-      <td>0.916667</td>
       <td>1.000000</td>
       <td>1.000000</td>
       <td>1.000000</td>
       <td>1.000000</td>
+      <td>0.909091</td>
       <td>1.000000</td>
     </tr>
     <tr>
       <th>8</th>
-      <td>0.833333</td>
-      <td>0.833333</td>
-      <td>0.916667</td>
-      <td>0.916667</td>
-      <td>1.000000</td>
-      <td>0.916667</td>
+      <td>0.909091</td>
+      <td>0.909091</td>
+      <td>0.818182</td>
+      <td>0.909091</td>
+      <td>0.909091</td>
+      <td>0.818182</td>
     </tr>
     <tr>
       <th>9</th>
+      <td>0.818182</td>
       <td>1.000000</td>
-      <td>0.916667</td>
-      <td>0.916667</td>
       <td>1.000000</td>
-      <td>0.916667</td>
+      <td>1.000000</td>
+      <td>1.000000</td>
       <td>1.000000</td>
     </tr>
   </tbody>
@@ -635,18 +640,20 @@ results
 
 
 ```python
-ax = plt.axes()
-plt.boxplot(results,showmeans=True)
-plt.title('box plot model Accuracy')
-plt.xlabel("Models")
-plt.ylabel("Accuracy")
-ax.set_xticklabels(names)
-plt.show()
+results.plot(kind='box',color='g')
 ```
 
 
+
+
+    <AxesSubplot:>
+
+
+
+
     
-![output_32_0](https://user-images.githubusercontent.com/122164879/216907474-35f953f0-d487-4884-aace-bef79222dc9c.png)
+![output_32_1](https://user-images.githubusercontent.com/122164879/216913052-71e47f4b-cf6f-4fc8-903b-069ec961ab6b.png)
+
     
 
 
@@ -662,13 +669,14 @@ plt.show()
 
 
     
-![output_33_0](https://user-images.githubusercontent.com/122164879/216907478-a54dce6f-bfe2-4819-adb6-652ab7317a95.png)
+![output_33_0](https://user-images.githubusercontent.com/122164879/216913086-918c4037-fc91-4624-b04f-75441c702dfd.png)
 
+    
 
-1. LDA values are distributed around median
-2. There is no outlayers in this data
-
-
+1. here LDA has maximum accuracy
+2. and there is no minumum value only maximum value
+3. LDA have 2 outlayers is that outlayers remove then it will give 100%
+4. LDA values are distributed around median
 ### Prediction
 ###### since Accuracy will not always be the metrics to select best model
 LDA
@@ -687,16 +695,16 @@ y_pred_LDA
 
 
 
-    array(['Iris-setosa', 'Iris-versicolor', 'Iris-versicolor', 'Iris-setosa',
-           'Iris-setosa', 'Iris-versicolor', 'Iris-virginica',
-           'Iris-versicolor', 'Iris-versicolor', 'Iris-virginica',
+    array(['Iris-setosa', 'Iris-versicolor', 'Iris-versicolor',
            'Iris-virginica', 'Iris-versicolor', 'Iris-versicolor',
-           'Iris-versicolor', 'Iris-virginica', 'Iris-setosa',
-           'Iris-versicolor', 'Iris-virginica', 'Iris-setosa',
-           'Iris-virginica', 'Iris-versicolor', 'Iris-setosa',
-           'Iris-versicolor', 'Iris-versicolor', 'Iris-setosa', 'Iris-setosa',
-           'Iris-virginica', 'Iris-virginica', 'Iris-virginica',
-           'Iris-versicolor'], dtype='<U15')
+           'Iris-versicolor', 'Iris-setosa', 'Iris-virginica',
+           'Iris-versicolor', 'Iris-versicolor', 'Iris-virginica',
+           'Iris-setosa', 'Iris-setosa', 'Iris-virginica', 'Iris-setosa',
+           'Iris-virginica', 'Iris-virginica', 'Iris-versicolor',
+           'Iris-virginica', 'Iris-setosa', 'Iris-virginica',
+           'Iris-versicolor', 'Iris-virginica', 'Iris-setosa', 'Iris-setosa',
+           'Iris-versicolor', 'Iris-setosa', 'Iris-virginica',
+           'Iris-virginica'], dtype='<U15')
 
 
 SVM
@@ -715,16 +723,16 @@ y_pred_SVM
 
 
 
-    array(['Iris-setosa', 'Iris-versicolor', 'Iris-versicolor', 'Iris-setosa',
-           'Iris-setosa', 'Iris-versicolor', 'Iris-virginica',
-           'Iris-versicolor', 'Iris-versicolor', 'Iris-virginica',
+    array(['Iris-setosa', 'Iris-versicolor', 'Iris-versicolor',
            'Iris-virginica', 'Iris-versicolor', 'Iris-versicolor',
-           'Iris-versicolor', 'Iris-virginica', 'Iris-setosa',
-           'Iris-versicolor', 'Iris-virginica', 'Iris-setosa',
-           'Iris-virginica', 'Iris-versicolor', 'Iris-setosa',
-           'Iris-versicolor', 'Iris-versicolor', 'Iris-setosa', 'Iris-setosa',
-           'Iris-virginica', 'Iris-virginica', 'Iris-virginica',
-           'Iris-versicolor'], dtype=object)
+           'Iris-versicolor', 'Iris-setosa', 'Iris-virginica',
+           'Iris-versicolor', 'Iris-versicolor', 'Iris-virginica',
+           'Iris-setosa', 'Iris-setosa', 'Iris-virginica', 'Iris-setosa',
+           'Iris-virginica', 'Iris-virginica', 'Iris-versicolor',
+           'Iris-virginica', 'Iris-setosa', 'Iris-virginica',
+           'Iris-versicolor', 'Iris-virginica', 'Iris-setosa', 'Iris-setosa',
+           'Iris-versicolor', 'Iris-setosa', 'Iris-versicolor',
+           'Iris-virginica'], dtype=object)
 
 
 
@@ -739,20 +747,20 @@ print(f" report LDA: \n {classification_report(y_test,y_pred_LDA)}")
 ```
 
     confusion_matrix LDA: 
-     [[ 8  0  0]
-     [ 0 13  0]
-     [ 0  0  9]] 
+     [[ 9  0  0]
+     [ 0 10  1]
+     [ 0  0 10]] 
      
      report LDA: 
                       precision    recall  f1-score   support
     
-        Iris-setosa       1.00      1.00      1.00         8
-    Iris-versicolor       1.00      1.00      1.00        13
-     Iris-virginica       1.00      1.00      1.00         9
+        Iris-setosa       1.00      1.00      1.00         9
+    Iris-versicolor       1.00      0.91      0.95        11
+     Iris-virginica       0.91      1.00      0.95        10
     
-           accuracy                           1.00        30
-          macro avg       1.00      1.00      1.00        30
-       weighted avg       1.00      1.00      1.00        30
+           accuracy                           0.97        30
+          macro avg       0.97      0.97      0.97        30
+       weighted avg       0.97      0.97      0.97        30
     
     
 
@@ -765,16 +773,16 @@ print(f" report SVM: \n {classification_report(y_test,y_pred_SVM)}")
 ```
 
     confusion_matrix SVM: 
-     [[ 8  0  0]
-     [ 0 13  0]
-     [ 0  0  9]] 
+     [[ 9  0  0]
+     [ 0 11  0]
+     [ 0  0 10]] 
      
      report SVM: 
                       precision    recall  f1-score   support
     
-        Iris-setosa       1.00      1.00      1.00         8
-    Iris-versicolor       1.00      1.00      1.00        13
-     Iris-virginica       1.00      1.00      1.00         9
+        Iris-setosa       1.00      1.00      1.00         9
+    Iris-versicolor       1.00      1.00      1.00        11
+     Iris-virginica       1.00      1.00      1.00        10
     
            accuracy                           1.00        30
           macro avg       1.00      1.00      1.00        30
@@ -784,7 +792,7 @@ print(f" report SVM: \n {classification_report(y_test,y_pred_SVM)}")
 
 
 ```python
-sns.heatmap(cm_SVM, annot=True, fmt='d', cmap='magma')
+sns.heatmap(cm_SVM, annot=True, fmt='d', cmap='Greens')
 plt.ylabel('True label')
 plt.xlabel('Predicted label')
 plt.show()
@@ -792,7 +800,8 @@ plt.show()
 
 
     
-![output_45_0](https://user-images.githubusercontent.com/122164879/216907487-06631e62-a4e9-4142-b428-34d35133a413.png)
+![output_45_0](https://user-images.githubusercontent.com/122164879/216913139-a21d75dd-f2ea-47ed-9aee-b86ced1bbde2.png)
+
     
 
 
@@ -800,5 +809,4 @@ plt.show()
 ```python
 #Here, SVM predicts better than LDA, so SVM is the best model
 ```
-
 
