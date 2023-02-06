@@ -3,6 +3,8 @@
 2. Regrssion model predict a dependent variable value (y) based on a given independent variable (x).
 3. It is used for predicting the continuous dependent variable with the help of independent variables.
 4. goal: find the best fit line that can accurately predict the output for the continuous dependent variable
+5. The differnce b/w actual value and estimated value is the error we need to reduce the error
+
 
 1. Simple Linear Regression
         there is only single indipendent variable
