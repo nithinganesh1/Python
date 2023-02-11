@@ -807,7 +807,4 @@ plt.show()
 
 
 
-```python
-#Here, SVM predicts better than LDA, so SVM is the best model
-```
 
