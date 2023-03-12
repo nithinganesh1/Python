@@ -188,8 +188,9 @@ plt.show()
 
 
     
+![output_8_0](https://user-images.githubusercontent.com/122164879/224533280-43b2c973-fb1c-4b16-a3cd-3b2f75717564.png)
 
-    
+
 
 
 **we can speed up this code using sklearn**
