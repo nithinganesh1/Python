@@ -1,0 +1,52 @@
+Year,Top Batsman,Country,Rating,Top Bowler,Country.1,Rating.1,Top All-rounder,Country.2,Rating.2
+2021,Babar Azam,Pakistan,873,Trent Boult,New Zealand,737,Shakib Al Hasan,Bangladesh,416
+2020,Virat Kohli,India,870,Trent Boult,New Zealand,722,Shakib Al Hasan,Bangladesh,373
+2019,Virat Kohli,India,887,Jasprit Bumrah,India,785,Ben Stokes,England,319
+2018,Virat Kohli,India,899,Jasprit Bumrah,India,841,Rashid Khan,Afghanistan,353
+2017,Virat Kohli,India,876,Hasan Ali,Pakistan,759,Mohammad Hafeez,Pakistan,352
+2016,AB de Villiers,South Africa,861,Trent Boult,New Zealand,718,Shakib Al Hasan,Bangladesh,377
+2015,AB de Villiers,South Africa,900,Sunil Narine,West Indies,734,Shakib Al Hasan,Bangladesh,415
+2014,AB de Villiers,South Africa,887,Sunil Narine,West Indies,753,Angelo Mathews,Sri Lanka,408
+2013,AB de Villiers,South Africa,872,Saeed Ajmal,Pakistan,776,Shakib Al Hasan,Bangladesh,376
+2012,Hashim Amla,South Africa,901,Saeed Ajmal,Pakistan,747,Shakib Al Hasan,Bangladesh,425
+2011,Hashim Amla,South Africa,840,Saeed Ajmal,Pakistan,735,Shakib Al Hasan,Bangladesh,419
+2010,Hashim Amla,South Africa,849,Daniel Vettori,New Zealand,727,Shakib Al Hasan,Bangladesh,434
+2009,M.S.Dhoni,India,825,Daniel Vettori,New Zealand,717,Shakib Al Hasan,Bangladesh,453
+2008,M.S.Dhoni,India,771,Nathan Bracken,Australia,754,Jacob Oram,New Zealand,381
+2007,Ricky Ponting,Australia,829,Shaun Pollock,South Africa,843,Shaun Pollock,South Africa,466
+2006,Michael Hussey,Australia,815,Shaun Pollock,South Africa,905,Shaun Pollock,South Africa,473
+2005,Ricky Ponting,Australia,803,Glenn McGrath,Australia,832,Andrew Flintoff,England,453
+2004,Adam Gilchrist,Australia,789,Shaun Pollock,South Africa,822,Andrew Flintoff,England,511
+2003,Sachin Tendulkar,India,816,Shaun Pollock,South Africa,877,Chris Gayle,West Indies,509
+2002,Michael Bevan,Australia,778,Shaun Pollock,South Africa,887,Jacques Kallis,South Africa,463
+2001,Michael Bevan,Australia,835,Muttiah Muralitharan,Sri Lanka,898,Jacques Kallis,South Africa,449
+2000,Michael Bevan,Australia,855,Muttiah Muralitharan,Sri Lanka,856,Jacques Kallis,South Africa,449
+1999,Michael Bevan,Australia,859,Shaun Pollock,South Africa,812,Lance Klusener,South Africa,491
+1998,Sachin Tendulkar,India,887,Saqlain Mushtaq,Pakistan,793,Carl Hooper,West Indies,437
+1997,Brian Lara,West Indies,883,Shaun Pollock,South Africa,800,Sanath Jayasuriya,Sri Lanka,434
+1996,Brian Lara,West Indies,891,Curtly Ambrose,West Indies,827,Carl Hooper,West Indies,361
+1995,Brian Lara,West Indies,880,Paul Reiffel,Australia,787,Hansie Cronje,South Africa,464
+1994,Brian Lara,West Indies,826,Wasim Akram,Pakistan,780,Hansie Cronje,South Africa,407
+1993,Brian Lara,West Indies,863,Wasim Akram,Pakistan,825,Kapil Dev,India,398
+1992,Dean Jones,Australia,858,Curtly Ambrose,West Indies,816,Kapil Dev,India,435
+1991,Dean Jones,Australia,894,Curtly Ambrose,West Indies,870,Kapil Dev,India,476
+1990,Dean Jones,Australia,913,Curtly Ambrose,West Indies,813,Kapil Dev,India,442
+1989,Dean Jones,Australia,870,Courtney Walsh,West Indies,778,Kapil Dev,India,475
+1988,Javed Miandad,Pakistan,888,Malcolm Marshall,West Indies,780,Kapil Dev,India,516
+1987,Vivian Richards,West Indies,933,Maninder Singh,India,814,Kapil Dev,India,521
+1986,Vivian Richards,West Indies,932,Joel Garner,West Indies,891,Kapil Dev,India,556
+1985,Vivian Richards,West Indies,935,Joel Garner,West Indies,921,Kapil Dev,India,573
+1984,Vivian Richards,West Indies,932,Joel Garner,West Indies,918,Kapil Dev,India,545
+1983,Zaheer Abbas,Pakistan,931,Richard Hadlee,New Zealand,914,Kapil Dev,India,618
+1982,Vivian Richards,West Indies,901,Dennis Lillee,Australia,878,Greg Chappell,Australia,523
+1981,Greg Chappell,Australia,884,Dennis Lillee,Australia,814,Greg Chappell,Australia,547
+1980,Greg Chappell,Australia,817,Dennis Lillee,Australia,764,Greg Chappell,Australia,371
+1979,Greg Chappell,Australia,733,Andy Roberts,West Indies,646,Chris Old,England,251
+1978,Greg Chappell,Australia,670,Chris Old,England,560,Chris Old,England,245
+1977,Greg Chappell,Australia,677,Max Walker,Australia,517,Greg Chappell,Australia,222
+1976,Dennis Amiss,England,654,Bernard Julien,West Indies,540,Chris Old,England,165
+1975,Keith Fletcher,England,656,Max Walker,Australia,497,Chris Old,England,170
+1974,Keith Fletcher,England,517,Geoff Arnold,England,444,Tony Greig,England,125
+1973,Dennis Amiss,England,465,Geoff Arnold,England,410,Tony Greig,England,90
+1972,Keith Stackpole,Australia,371,Geoff Arnold,England,376,Greg Chappell,Australia,60
+1971,John Edrich,England,246,Keith Stackpole,Australia,141,Keith Stackpole,Australia,13
