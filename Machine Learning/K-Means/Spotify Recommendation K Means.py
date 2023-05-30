@@ -2,6 +2,7 @@
 # coding: utf-8
 
 # ### K Means
+###here i am uploading py format becouse it contain more than 50mb so i uploaded using .py format
 
 # K-means is an unsupervised learning algorithm that groups data points into a specified number of clusters.<br>
 # 
