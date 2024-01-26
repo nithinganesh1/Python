@@ -28,13 +28,13 @@
 
 - **Weights:** Numerical values assigned to connections between neurons determining signal strength.
 
-- ![image](https://github.com/nithinganesh1/Python/assets/122164879/0cfe0e09-c1bf-4bcb-a497-c60b5a9f8951)
+  ![image](https://github.com/nithinganesh1/Python/assets/122164879/0cfe0e09-c1bf-4bcb-a497-c60b5a9f8951)
 
 
 - **Biases:** Constant values added to neuron output before applying the activation function, introducing a shift in activation.
 
 ### Multi-Layer Perceptrons (MLPs):
-![image](https://github.com/nithinganesh1/Python/assets/122164879/828a7d0f-ee8a-4dc2-8424-f7ffd6d9c20f)
+ ![image](https://github.com/nithinganesh1/Python/assets/122164879/828a7d0f-ee8a-4dc2-8424-f7ffd6d9c20f)
 
 
 - Neural networks with multiple layers allowing for learning complex relationships in data.
