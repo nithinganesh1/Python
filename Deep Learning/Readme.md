@@ -28,7 +28,9 @@
  ![image](https://github.com/nithinganesh1/Python/assets/122164879/0cfe0e09-c1bf-4bcb-a497-c60b5a9f8951)
 - **Weights:** Numerical values assigned to connections between neurons determining signal strength.
 
-
+```
+Y = ∑xiwi +b
+```
 - **Biases:** Constant values added to neuron output before applying the activation function, introducing a shift in activation.
 
 ### Multi-Layer Perceptrons (MLPs):
@@ -43,7 +45,7 @@
 
     - **Sigmoid Activation Function:**
       ```
-      f(x) = 1 / (1 + e^(-x))
+      f(x) = 1 / (1 + e^(-y))
       ```
       Used for binary classification (0 or 1).
 
