@@ -1,4 +1,4 @@
-![image](https://github.com/nithinganesh1/Python/assets/122164879/9c62f4d5-9c53-4c62-b035-5e468e9d0c1b)# Deep Learning Overview
+# Deep Learning Overview
 
 ## AI vs ML vs DL vs Data Science:
 
