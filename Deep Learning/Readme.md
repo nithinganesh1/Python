@@ -72,6 +72,7 @@ Y = ∑xiwi +b
 3. update wight
 
 a.wight updation formula
+
  loss = (y-y^hat)
  to reduce loss we need to update wights
  ```
@@ -85,6 +86,7 @@ a.wight updation formula
 ![image](https://github.com/nithinganesh1/Python/assets/122164879/cf1221f2-6e65-4e6f-8793-13e422e68bb0)
 
 b. chain rule in differentiation
+
 The chain rule is a formula used in differential calculus to calculate the derivative of a composite function.
 ![image](https://github.com/nithinganesh1/Python/assets/122164879/07ed8b18-8a01-417e-a05e-4eef714b48de)
 
