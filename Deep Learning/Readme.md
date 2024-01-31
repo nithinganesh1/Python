@@ -102,7 +102,8 @@ we can cancel O2 when cross-multiplication
 ∂L/∂w1 new = ∂L/∂O2 * ∂O2/∂O1 * ∂O1/∂w1
 ```
 
-![image](https://github.com/nithinganesh1/Python/assets/122164879/d5404946-0e56-4ffc-98aa-db077dba4c27)
+![image](https://github.com/nithinganesh1/Python/assets/122164879/1ff6a1f7-4dfd-4ea5-be04-5da8eb54f6e6)
+
 
 #### updating w1
 ```
