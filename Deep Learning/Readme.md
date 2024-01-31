@@ -1,4 +1,4 @@
-# Deep Learning Overview
+![image](https://github.com/nithinganesh1/Python/assets/122164879/9c62f4d5-9c53-4c62-b035-5e468e9d0c1b)# Deep Learning Overview
 
 ## AI vs ML vs DL vs Data Science:
 
@@ -62,7 +62,7 @@ Y = ∑xiwi +b
 2. Multiply by weight
 3. Add bias
 4. Activate function
-5. Calculate loss if predicted value is incorrect
+5. Calculate loss if the predicted value is incorrect
 6. Optimize weights using algorithms like gradient descent
 
 ## Backward Propagation:
@@ -90,7 +90,7 @@ b. chain rule in differentiation
 The chain rule is a formula used in differential calculus to calculate the derivative of a composite function.
 ![image](https://github.com/nithinganesh1/Python/assets/122164879/07ed8b18-8a01-417e-a05e-4eef714b48de)
 
-####updating w4
+#### updating w4
 ```
 ∂L/∂w4 new = ∂L/∂O2 * ∂O2/∂w4
 ```
@@ -101,6 +101,14 @@ we can cancel O2 when cross-multiplication
 ```
 ∂L/∂w1 new = ∂L/∂O2 * ∂O2/∂O1 * ∂O1/∂w1
 ```
+
+![image](https://github.com/nithinganesh1/Python/assets/122164879/d5404946-0e56-4ffc-98aa-db077dba4c27)
+
+#### updating w1
+```
+∂L/∂W1 new = [ ∂L/∂31 * ∂31/∂21 * ∂21/∂11 * ∂11/w1 ] + [ ∂l/∂31 * ∂31/∂22 * ∂22/∂11 * ∂11/∂w1 ]
+```
+need to calculate the total value of all the new w1 that I am receiving from different ways. when there multiple Hidden layers
 
 
 
