@@ -65,10 +65,40 @@ Y = ∑xiwi +b
 5. Calculate loss if predicted value is incorrect
 6. Optimize weights using algorithms like gradient descent
 
-#### Backward Propagation:
+## Backward Propagation:
 
 1. Calculate loss function
 2. Optimize using an optimizer
 3. update wight
+
+a.wight updation formula
+ loss = (y-y^hat)
+ to reduce loss we need to update wights
+ ```
+ w new = w old - learning rate 
+ ```
+ (∂L/∂w old) = slope 
+![image](https://github.com/nithinganesh1/Python/assets/122164879/c34f36ad-1035-4499-90d3-905fa32daba3)
+
+ We want to minimize the function by updating the weights with a learning rate.
+ If the learning rate is too high, the model may overshoot the minimum and become unstable. If the learning rate is too low, the model may take too long to converge or get stuck at a suboptimal point. A common recommendation for the initial learning rate is 0.001
+![image](https://github.com/nithinganesh1/Python/assets/122164879/cf1221f2-6e65-4e6f-8793-13e422e68bb0)
+
+b. chain rule in differentiation
+The chain rule is a formula used in differential calculus to calculate the derivative of a composite function.
+![image](https://github.com/nithinganesh1/Python/assets/122164879/07ed8b18-8a01-417e-a05e-4eef714b48de)
+
+####updating w4
+```
+∂L/∂w4 new = ∂L/∂O2 * ∂O2/∂w4
+```
+O2 and w4 are related 
+we can cancel O2 when cross-multiplication 
+
+####updating w1
+```
+∂L/∂w1 new = ∂L/∂O2 * ∂O2/∂O1 * ∂O1/∂w1
+```
+
 
 
