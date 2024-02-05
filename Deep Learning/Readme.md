@@ -178,7 +178,7 @@ propagation process, it is not a problem. Some areas are sensitive and some are 
   _______________________________________________________
   - Binary classification | Relu/Relu Variations.|   sigmoid    |
   - Multiy class_________| Relu/Relu Variations.|  softmax     |
-  - Regression___________| Relu/Relu Variations.| Linear       |
+  - Regression__________| Relu/Relu Variations.| Linear       |
 
 
 
