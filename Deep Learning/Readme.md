@@ -177,8 +177,8 @@ propagation process, it is not a problem. Some areas are sensitive and some are 
                           | Hidden Layer | Output Layer |
   _______________________________________________________
   - Binary classification | Relu/Relu Variations.|   sigmoid    |
-  - Multiy class          | Relu/Relu Variations.|  softmax     |
-  - Regression            | Relu/Relu Variations.| Linear       | also Separate loss functon 
+  - Multiy class__________| Relu/Relu Variations.|  softmax     |
+  - Regression____________| Relu/Relu Variations.| Linear       | also Separate loss functon 
 
 
 
