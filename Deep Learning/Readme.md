@@ -173,6 +173,9 @@ propagation process, it is not a problem. Some areas are sensitive and some are 
    - if a=0, f becomes ReLU
    - if a>0, f becomes leaky ReLU
    - if ai is a learnable parameter, f becomes PReLU
+
+5. Softmax
+   The softmax activation function is used to turn a vector of numbers into a vector of probabilities that add up to one. It does this by making the larger numbers in the vector more likely and the smaller numbers less likely. 
 #### Activation function we should use.
                           | Hidden Layer | Output Layer |
   _______________________________________________________
