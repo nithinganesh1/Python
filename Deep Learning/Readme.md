@@ -153,15 +153,32 @@ backpropagation, we all use the chain rule of differential to calculate the diff
 3. ReLU function
    ![image](https://github.com/nithinganesh1/Python/assets/122164879/0c743c3b-4df6-40ee-acb0-88cfa8008d32)
 
+    f(x) =max(0,x)
+
    The ReLU function is actually a function that takes the maximum value. Note that this is not fully interval-derivable, but we can take sub-gradient, as shown in the figure above. Although ReLU is simple, it is an important achievement in recent years.
 
 The ReLU (Rectified Linear Unit) function is an activation function that is currently more popular. Compared with the sigmod function and the tanh function, it has the following advantages:
  - When the input is positive, there is no gradient saturation problem.
  -  The calculation speed is much faster. The ReLU function has only a linear relationship. Whether it is forward or backward, it is much faster than sigmod and tanh. (Sigmod and tanh need to calculate the exponent, which will be slower.)
 
->  When the input is negative, ReLU is completely inactive, which means that once a negative number is entered, ReLU will die. In this way, in the forward propagation process, it is not a problem. Some areas are sensitive and some are insensitive. But in the backpropagation process, if you enter a negative number, the gradient will be completely zero, which has the same problem as the sigmod function and tanh function.
-> we find that the output of the ReLU function is either 0 or a positive number, which means that the ReLU function is not a 0-centric function.
+ >  When the input is negative, ReLU is completely inactive, which means that once a negative number is entered, ReLU will die. In this way, in the forward
+propagation process, it is not a problem. Some areas are sensitive and some are insensitive. But in the backpropagation process, if you enter a negative number, the gradient will be completely zero, which has the same problem as the sigmod function and tanh function.
+ > we find that the output of the ReLU function is either 0 or a positive number, which means that the ReLU function is not a 0-centric function.
 
+4. Leaky ReLU function
+   To solve the Dead ReLU Problem, people proposed to set the first half of ReLU 0.01x instead of 0.
+   f(x) = max(0.01,x)
+   Another intuitive idea is a parameter-based method, Parametric ReLU : f(x)=  max(alpha x,x), which alpha can be learned from back propagation. In theory, Leaky ReLU has all  the advantages of ReLU, plus there will be no problems with Dead ReLU, but in actual operation,  it has not been fully proved that Leaky ReLU is always better than ReLU.
+   
+   - if a=0, f becomes ReLU
+   - if a>0, f becomes leaky ReLU
+   - if ai is a learnable parameter, f becomes PReLU
+#### Activation function we should use.
+                          | Hidden Layer | Output Layer |
+  _______________________________________________________
+  - Binary classification | Relu/Relu Variations.|   sigmoid    |
+  - Multiy class          | Relu/Relu Variations.|  softmax     |
+  - Regression            | Relu/Relu Variations.| Linear       | also Separate loss functon 
 
 
 
