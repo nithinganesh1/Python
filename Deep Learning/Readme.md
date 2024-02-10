@@ -146,7 +146,7 @@ backpropagation, we all use the chain rule of differential to calculate the diff
 2. tanh function
    ![image](https://github.com/nithinganesh1/Python/assets/122164879/9ea4039c-ccae-4efd-8717-7473b652669c)
     The curves of tanh function and sigmoid function are relatively similar
-   - The output interval of tanh is 1), and the whole function is 0-centric, which is better than sigmod.
+   - The output interval of tanh is 1), and the whole function is 0-centric, which is better than sigmoid.
      ```
      tanh the output values range between −1 and 1, which is just the sigmoid function curve extended. Hence, negative inputs of the hyperbolic functions will be mapped to a negative output as well as the input values that are nearing zero will also be mapped to output values nearing zero. Therefore, the network is not stuck due to the above features during training. 
      ```
@@ -155,20 +155,20 @@ backpropagation, we all use the chain rule of differential to calculate the diff
 
     f(x) =max(0,x)
 
-   The ReLU function is actually a function that takes the maximum value. Note that this is not fully interval-derivable, but we can take sub-gradient, as shown in the figure above. Although ReLU is simple, it is an important achievement in recent years.
+   The ReLU function is actually a function that takes the maximum value. Note that this is not fully interval-derivable, but we can take a sub-gradient, as shown in the figure above. Although ReLU is simple, it is an important achievement in recent years.
 
-The ReLU (Rectified Linear Unit) function is an activation function that is currently more popular. Compared with the sigmod function and the tanh function, it has the following advantages:
+The ReLU (Rectified Linear Unit) function is an activation function that is currently more popular. Compared with the sigmoid function and the tanh function, it has the following advantages:
  - When the input is positive, there is no gradient saturation problem.
- -  The calculation speed is much faster. The ReLU function has only a linear relationship. Whether it is forward or backward, it is much faster than sigmod and tanh. (Sigmod and tanh need to calculate the exponent, which will be slower.)
+ -  The calculation speed is much faster. The ReLU function has only a linear relationship. Whether it is forward or backwards, it is much faster than sigmod and tanh. (Sigmod and Tanh need to calculate the exponent, which will be slower.)
 
  >  When the input is negative, ReLU is completely inactive, which means that once a negative number is entered, ReLU will die. In this way, in the forward
-propagation process, it is not a problem. Some areas are sensitive and some are insensitive. But in the backpropagation process, if you enter a negative number, the gradient will be completely zero, which has the same problem as the sigmod function and tanh function.
+propagation process, it is not a problem. Some areas are sensitive and some are insensitive. But in the backpropagation process, if you enter a negative number, the gradient will be completely zero, which has the same problem as the sigmoid function and tanh function.
  > we find that the output of the ReLU function is either 0 or a positive number, which means that the ReLU function is not a 0-centric function.
 
 4. Leaky ReLU function
    To solve the Dead ReLU Problem, people proposed to set the first half of ReLU 0.01x instead of 0.
    f(x) = max(0.01,x)
-   Another intuitive idea is a parameter-based method, Parametric ReLU : f(x)=  max(alpha x,x), which alpha can be learned from back propagation. In theory, Leaky ReLU has all  the advantages of ReLU, plus there will be no problems with Dead ReLU, but in actual operation,  it has not been fully proved that Leaky ReLU is always better than ReLU.
+   Another intuitive idea is a parameter-based method, Parametric ReLU: f(x)=  max(alpha x,x), in which alpha can be learned from backpropagation. In theory, Leaky ReLU has all  the advantages of ReLU, plus there will be no problems with Dead ReLU. Still, in actual operation,  it has not been fully proved that Leaky ReLU is always better than ReLU.
    
    - if a=0, f becomes ReLU
    - if a>0, f becomes leaky ReLU
@@ -182,6 +182,41 @@ propagation process, it is not a problem. Some areas are sensitive and some are 
   - Binary classification | Relu/Relu Variations.|   sigmoid    |
   - Multiy class_________| Relu/Relu Variations.|  softmax     |
   - Regression__________| Relu/Relu Variations.| Linear       |
+
+
+### Gradient Descent
+
+![image](https://github.com/nithinganesh1/Python/assets/122164879/b07e1313-4367-4cf0-acf9-6333367553c3)
+
+for updating the weight we need to minimise the loss function so we use optimisers an example of an optimiser is gradient descent.
+
+#### EPOCH
+```
+1 EPOCH = one forward and backwards propagation
+```
+Disadvantage of Gradient Descent
+1. Convergence is very slow
+2. Resource Extensive (it needs to have a huge RAM in our system)
+
+### Stochastic gradient descent
+
+unlike the Gradient Descent, it runs only one Epoch at a time.
+1. need not that much RAM 
+2. also it will decrease the Speed 
+
+### Mini Batch SGD
+
+1. it uses a small subset (mini-batch) of training samples.
+2. Each mini-batch contributes to a single iteration of the optimization algorithm.
+3. Resource not too much
+4. speed is better than stochastic
+5. convergence is better
+6. time complexity will improve 
+
+![image](https://github.com/nithinganesh1/Python/assets/122164879/c4e66d0d-c714-4eb9-b7b8-a9716da0cf75)
+
+
+
 
 
 
