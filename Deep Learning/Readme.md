@@ -215,6 +215,8 @@ unlike the Gradient Descent, it runs only one Epoch at a time.
 
 ![image](https://github.com/nithinganesh1/Python/assets/122164879/c4e66d0d-c714-4eb9-b7b8-a9716da0cf75)
 
+### SGD with Momentum 
+
 
 
 
