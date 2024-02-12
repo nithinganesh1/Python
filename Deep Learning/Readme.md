@@ -76,7 +76,7 @@ a.wight updation formula
  loss = (y-y^hat)
  to reduce loss we need to update wights
  ```
- w new = w old - learning rate 
+ w new = w old - learning rate * slop
  ```
  (∂L/∂w old) = slope 
 ![image](https://github.com/nithinganesh1/Python/assets/122164879/c34f36ad-1035-4499-90d3-905fa32daba3)
@@ -163,7 +163,7 @@ The ReLU (Rectified Linear Unit) function is an activation function that is curr
 
  >  When the input is negative, ReLU is completely inactive, which means that once a negative number is entered, ReLU will die. In this way, in the forward
 propagation process, it is not a problem. Some areas are sensitive and some are insensitive. But in the backpropagation process, if you enter a negative number, the gradient will be completely zero, which has the same problem as the sigmoid function and tanh function.
- > we find that the output of the ReLU function is either 0 or a positive number, which means that the ReLU function is not a 0-centric function.
+ > We find that the output of the ReLU function is either 0 or a positive number, which means that the ReLU function is not a 0-centric function.
 
 4. Leaky ReLU function
    To solve the Dead ReLU Problem, people proposed to set the first half of ReLU 0.01x instead of 0.
@@ -217,9 +217,43 @@ unlike the Gradient Descent, it runs only one Epoch at a time.
 
 ### SGD with Momentum 
 
+In all that above SGD has the noise we need to remove the noise so we use Momentum  We need to make sure we smoothen the entire process of reaching the global minima.
 
+#### Exponential moving average
 
+```
+ w new = w old - learning rate *  (∂L/∂w old)
+```
+here we update the weight updation formula,
+```
+wt = wt-1 - learning rate *  (∂L/∂w t-1)
+```
+1. wt = current weight
+2. wt-1 = old weight
 
+t1, t2, t3, t4,...tn
+a1, a2, a3, a4,...an
+
+1. t = time
+2. a = value of corresponding time
+3. v = value of
+
+vt1 = a1
+vt2 = beta * vt1 + (1-beta) * a2
+
+beta value is always between 0 to 1 if the beta value is .95 then it is more important to my vt1 if the previous time stamp value is near zero then we give more importance to the current timestamp value (a2).
+
+vt3 = beata * vt2 + (1-beta) * a3
+
+```
+wt = w(t-1) - learingrate * Vdw
+```
+Vdw = value of derivative ie, beta* Vdw(t-1) + (1-beta) *  (∂L/∂w t-1)
+This will smoothen the corve
+
+1. Reducing the noise
+2. Mini batch
+3. Quicker convergence
 
 
 
