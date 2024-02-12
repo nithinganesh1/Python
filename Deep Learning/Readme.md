@@ -255,5 +255,47 @@ This will smoothen the corve
 2. Mini batch
 3. Quicker convergence
 
+### Adagrad --> Adaptive Gradient Descent
 
+is all the previous Gradient Descent the learning rate is constant when we reach the global minima also it should decrease the learning rate it will be more logical 
+
+```
+wt = wt-1 - learning rate *  (∂L/∂w t-1)
+```
+we will change the learning rate to eta
+
+```
+wt = wt-1 - learning rate eta*  (∂L/∂w t-1)
+```
+learning rate eta = 
+```
+learning rate/sqrt(alfa t + E)
+```
+E = epsilon = the denominator never becomes 0
+```
+alpha t = ∑ n i = 1 ((∂L/∂w t)^2
+```
+
+ ∑ n i = 1 ((∂L/∂w t)^2 Here we using summation so the alfa of t will always increase when the t will increase
+ We are dividing the learning rate by the increasing alpha (learning rate eta = learning rate/sqrt(alfa t + E) ) so the learning rate will decrease every t will increase
+
+ ### Adadelta and rmsprop
+
+if we keep updating alpha then we divide the learning rate it is already a small number when replacing the learning rate is that very small number wt1 wont change that much ie
+wt approximately equal to wt-1
+
+so we need to do alpha of t never so big so we change the alpha 
+```
+learning rate eta = learing rate/sqrt(sdw + E)
+```
+using Exponential weighted avg
+Sdw = beta sdw(t-1) + (1-beta)(∂L/∂w t-1)^2
+
+like this we control using Exponentially weighted avg this value will never increase very huge value sing the beta value because there is only a slow decrease in the learning rate also we will reach global minima.
+
+### Adam Optimizer
+
+comparing momentum + PMSPROP for smoothening and decreasing noise.
+
+Momentem + RMSPROP
 
