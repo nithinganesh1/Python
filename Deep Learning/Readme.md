@@ -184,6 +184,7 @@ propagation process, it is not a problem. Some areas are sensitive and some are 
   - Regression__________| Relu/Relu Variations.| Linear       |
 
 
+## optimizers
 ### Gradient Descent
 
 ![image](https://github.com/nithinganesh1/Python/assets/122164879/b07e1313-4367-4cf0-acf9-6333367553c3)
