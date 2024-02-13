@@ -300,3 +300,14 @@ comparing momentum + PMSPROP for smoothening and decreasing noise.
 
 Momentem + RMSPROP
 
+### Feature scaling 
+Eg.
+ANN ✔️
+Lr ✔️
+DT/RF ❌
+XGB ❌
+KNN ✔️
+Kmeans ✔️
+1. anything that is distance based, ie, values are bigger make time
+2. if there is gradient decent included must need
+
