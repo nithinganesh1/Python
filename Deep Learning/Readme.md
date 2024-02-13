@@ -315,6 +315,8 @@ Kmeans ✔️
 Opencored by Google, Pytorch by Facebook
 TensorFlow v>2.0 has Keras integrated 
 
+## Notes
+
 1. Sequential
    * the entire layers input layers, hidden layers, and output layers are interconnected theses all the nurl-network together ie, the block is called a sequential
    * ie, a huge block that has a neural network inside it, so it can differently do forward and backwards propagation.
@@ -326,3 +328,10 @@ TensorFlow v>2.0 has Keras integrated
    * Sometimes the entire neural network leads to overfitting
    * cut out some of the connections that will deactivated
 
+### black box model vs white box model
+Random forest = Black box model
+DT = White box 
+
+Black box: a magic machine that gives answers, but you can't see how it works inside (you don't know why it says what it says)
+
+White box: you know exactly what ingredients go in and how they're mixed, so you understand why it makes a certain dish. Clear as cooking!
