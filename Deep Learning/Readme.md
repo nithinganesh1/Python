@@ -311,3 +311,18 @@ Kmeans ✔️
 1. anything that is distance based, ie, values are bigger make time
 2. if there is gradient decent included must need
 
+### Tensorflow 
+Opencored by Google, Pytorch by Facebook
+TensorFlow v>2.0 has Keras integrated 
+
+1. Sequential
+   * the entire layers input layers, hidden layers, and output layers are interconnected theses all the nurl-network together ie, the block is called a sequential
+   * ie, a huge block that has a neural network inside it, so it can differently do forward and backwards propagation.
+2. Dense layer
+   * It will help to create layers, it will create input layers, hidden layers and output layers
+3. Activation functions
+   * for using the activation function we will able to use it
+4. Dropout layer
+   * Sometimes the entire neural network leads to overfitting
+   * cut out some of the connections that will deactivated
+
