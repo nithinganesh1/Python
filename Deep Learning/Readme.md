@@ -335,3 +335,38 @@ DT = White box
 Black box: a magic machine that gives answers, but you can't see how it works inside (you don't know why it says what it says)
 
 White box: you know exactly what ingredients go in and how they're mixed, so you understand why it makes a certain dish. Clear as cooking!
+
+# Convolutional Neural Network (CNN)
+## CNN VS Humen Brain
+Our brains are the master at determining objects quickly.
+we can differentiate cats and dogs and if anyone dressed like cats we can differentiate them easily like this picture 
+![image](https://github.com/nithinganesh1/Python/assets/122164879/b853dd49-a777-4243-88ca-03c019981afa)
+
+in major part of our back side of the brain is called the Cerebral Cortex there is a part of the brain called the Visual cortex which is specifically responsible  for seeing any items that are there any object that are there in what we see. In visual cortex has many layers.
+
+![Presentation1](https://github.com/nithinganesh1/Python/assets/122164879/eb00cad1-62d7-4036-b9ed-3a999801025f)
+
+Each layer will do some functionality, ie, something is happening in every layer and finally, all the information is passed then we can visualise the v7 layer image ie, and we are finally finding the output after so much processing
+
+Also CNN should be also able to do this many numbers of different kinds of processing
+
+### 1. Convolution
+Basic information about images
+1. it has pixels
+2. 2 types of photos black and wight and RGB type
+### Black and wight
+1. Consists of only two colours
+2. Every pixel ranges between 0 to 255: Black (0) and White (255).
+
+ ### 2. RGB image (coloured image)
+1. Represented using three colour channels: Red, Green, and Blue.
+2. 3 channels R, G, B channels
+3. ![Presentation3](https://github.com/nithinganesh1/Python/assets/122164879/fdbb8bf5-a3b7-4b59-a14e-6e35c3ba988b)
+4. this is the representation of RGB in pixel format 5*5*3 channel
+5. every channel value ranges between 0 to 255 when this campaign will get colour.
+
+Convolution operation.
+
+   
+
+
