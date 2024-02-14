@@ -412,7 +412,19 @@ stride meaning jumbing 2 at a time
 * the enatir Convolution operation stacked togother that would be Convolution operation
 * we need to lern and update from based on the input images
 
-### Max pooling
+### pooling
+The pooling operation involves sliding a two-dimensional filter over each channel of feature map and summarising the features lying within the region covered by the filter.
+1. Max pooling
+   Max pooling is a pooling operation that selects the maximum element from the region of the feature map covered by the filter. Thus, the output after max-pooling layer would be a feature map containing the most prominent features of the previous feature map.
+   selecting minimum element is min pooling
+
+   ![image](https://github.com/nithinganesh1/Python/assets/122164879/2d1d1163-2ae5-48df-9b5c-db2796eb0c4b)
+
+3. Avarage pooling
+   Average pooling computes the average of the elements present in the region of feature map covered by the filter. Thus, while max pooling gives the most prominent feature in a particular patch of the feature map, average pooling gives the average of features present in a patch.
+
+   ![image](https://github.com/nithinganesh1/Python/assets/122164879/530d72da-3601-48b7-8f78-1ec04a47ee29)
+   
 
 
 
