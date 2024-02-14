@@ -424,7 +424,28 @@ The pooling operation involves sliding a two-dimensional filter over each channe
    Average pooling computes the average of the elements present in the region of feature map covered by the filter. Thus, while max pooling gives the most prominent feature in a particular patch of the feature map, average pooling gives the average of features present in a patch.
 
    ![image](https://github.com/nithinganesh1/Python/assets/122164879/530d72da-3601-48b7-8f78-1ec04a47ee29)
-   
+
+
+### Flatening Layer
+
+we are literally going to flatten our pooled feature map into a column like in the image below.
+
+![image](https://github.com/nithinganesh1/Python/assets/122164879/06c70573-faff-4172-9cf4-d83555b76759)
+
+The reason we do this is that we're going to need to insert this data into an artificial neural network later on.
+
+![image](https://github.com/nithinganesh1/Python/assets/122164879/1efa031b-34e4-43d5-bdc1-4ebd753bf02a)
+
+As you see in the image above, we have multiple pooled feature maps from the previous step.
+
+What happens after the flattening step is that you end up with a long vector of input data that you then pass through the artificial neural network to have it processed further.
+
+
+![image](https://github.com/nithinganesh1/Python/assets/122164879/e067a0f2-816b-4d82-9838-33709d7b1dd1)
+
+
+
+
 
 
 
