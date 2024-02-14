@@ -367,6 +367,14 @@ Basic information about images
 
 Convolution operation.
 
-   
+if I have a 6*6 image we are going to pass it through a filter eg a 3*3 filter(horizontal edge filter) and we will get a 4*4 output 
+1. using min-max scaling each value of the pixel of 6*6 to 0 to 1 may like this
+3. We slide the 3x3 filter over the 6x6 image
+4. At each position, we compute the element-wise product of the filter and the corresponding region of the image.
+5. Sum up the results of the element-wise products to get the output value for that position.
+6. Repeat this process for all positions, resulting in a 4x4 output.
+7. ![image](https://github.com/nithinganesh1/Python/assets/122164879/eeb78d56-6a66-4545-8873-6501f026b8df)
+8. ![image](https://github.com/nithinganesh1/Python/assets/122164879/f00b6edf-e659-43fa-9bf7-e5b80f117b4f)
+
 
 
