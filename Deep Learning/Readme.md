@@ -374,7 +374,45 @@ if I have a 6*6 image we are going to pass it through a filter eg a 3*3 filter(h
 5. Sum up the results of the element-wise products to get the output value for that position.
 6. Repeat this process for all positions, resulting in a 4x4 output.
 7. ![image](https://github.com/nithinganesh1/Python/assets/122164879/eeb78d56-6a66-4545-8873-6501f026b8df)
-8. ![image](https://github.com/nithinganesh1/Python/assets/122164879/f00b6edf-e659-43fa-9bf7-e5b80f117b4f)
+8. ![image](https://github.com/nithinganesh1/Python/assets/122164879/f9076733-8432-44f8-a560-3994a529e018)
+9. after in 4*4 its will converted to 0 to 255 lowest values will converted to 0 and hightest values converted 255
+10. 255 become wite color and 0 become black color
+11. we can have multiple filter and multiple output
+12. after passing this image we getting some information from this image like getting vertical edge
+This process is clled Convolution operation
+```
+n-f+1 = 6-3+1 = 4
+```
+using this equation we find the output pixel 
+
+>> Filter can actually tack out information form spasific iamge
+
+in this process our image size is decreasing ie, we are lossing some information so we are usig padding 
+applay padding on top of it, build ie, we convert 6*6 image to 8*8 image if 4*4 image it will 6*6 image 
+#### Type of padding
+>> zero padding fill with 0
+>> put nearest pixel value
+Updated formula
+```
+n+2p-f+1 = 6+2-3+1 = 6
+```
+prevent the information loss of the image we use different kind of images
+
+>> we need to update the filter based on the input
+>> initaly we filter using randamaly
+>> with the help of  backpropogation we update the filter
+>> after the Convolution operation we use each and every value we use relu activation function
+
+stride = 2 then 
+```
+(n+2p-f+1)/2 = (6+2-3+1)2 = 3
+```
+stride meaning jumbing 2 at a time 
+
+* the enatir Convolution operation stacked togother that would be Convolution operation
+* we need to lern and update from based on the input images
+
+### Max pooling
 
 
 
