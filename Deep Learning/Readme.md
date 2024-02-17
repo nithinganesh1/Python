@@ -339,6 +339,8 @@ White box: you know exactly what ingredients go in and how they're mixed, so you
 # Convolutional Neural Network (CNN)
 ## CNN VS Humen Brain
 Our brains are the master at determining objects quickly.
+![image](https://github.com/nithinganesh1/Python/assets/122164879/79d7bf0a-be81-413b-9778-ce7802b978d0)
+
 we can differentiate cats and dogs and if anyone dressed like cats we can differentiate them easily like this picture 
 ![image](https://github.com/nithinganesh1/Python/assets/122164879/b853dd49-a777-4243-88ca-03c019981afa)
 
