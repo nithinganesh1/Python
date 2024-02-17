@@ -339,7 +339,6 @@ White box: you know exactly what ingredients go in and how they're mixed, so you
 # Convolutional Neural Network (CNN)
 ## CNN VS Humen Brain
 Our brains are the master at determining objects quickly.
-![image](https://github.com/nithinganesh1/Python/assets/122164879/79d7bf0a-be81-413b-9778-ce7802b978d0)
 
 we can differentiate cats and dogs and if anyone dressed like cats we can differentiate them easily like this picture 
 ![image](https://github.com/nithinganesh1/Python/assets/122164879/b853dd49-a777-4243-88ca-03c019981afa)
@@ -347,6 +346,8 @@ we can differentiate cats and dogs and if anyone dressed like cats we can differ
 in major part of our back side of the brain is called the Cerebral Cortex there is a part of the brain called the Visual cortex which is specifically responsible  for seeing any items that are there any object that are there in what we see. In visual cortex has many layers.
 
 ![Presentation1](https://github.com/nithinganesh1/Python/assets/122164879/eb00cad1-62d7-4036-b9ed-3a999801025f)
+
+![image](https://github.com/nithinganesh1/Python/assets/122164879/79d7bf0a-be81-413b-9778-ce7802b978d0)
 
 Each layer will do some functionality, ie, something is happening in every layer and finally, all the information is passed then we can visualise the v7 layer image ie, and we are finally finding the output after so much processing
 
